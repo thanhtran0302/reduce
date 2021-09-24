@@ -1,1 +1,1 @@
-export { reduce }from './algorithms/reduce/Reduce';
+export { reduce } from './reduce/Reduce';
