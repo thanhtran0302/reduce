@@ -1,0 +1,38 @@
+{
+  "name": "reduce",
+  "version": "1.0.0",
+  "description": "Javascript reduce function",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/03t02/reduce"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "jest --env=jsdom --logHeapUsage --maxWorkers=2 --verbose",
+    "test:watch": "yarn test --watch",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "pretty-quick": "pretty-quick",
+    "prepare": "husky install"
+  },
+  "author": "Thanh TRAN <ttranpro32@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.9.6",
+    "babel-jest": "^27.2.1",
+    "husky": "^7.0.2",
+    "jest": "^27.2.1",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^3.1.0",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "tsc": "^2.0.3",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.2.3"
+  }
+}
